@@ -1,0 +1,22 @@
+{
+    "提示": "带有 * 号的是必填项，这一行可以删掉，具体使用可以参照已经写好的配置",
+    "name": "配置名称",
+    "host": "* 教务系统的 Host",
+    "loginUrl": "* 登录教务系统的页面链接",
+    "afterLoginUrl": "* 登录教务系统后跳转的页面链接",
+    "courseTableUrl": "* 课程表的页面链接",
+    "accountSelector": "* 登录页面账号输入框 [input 元素] 的 selector 表达式",
+    "passwordSelector": "* 登录页面密码输入框 [input 元素] 的 selector 表达式",
+    "loginBtnSelector": "* 登录页面登录按钮 [任意元素] 的 selector 表达式",
+    "verifyCodeSelector": "登录页面验证码图片 [img 元素] 的 selector 表达式",
+    "verifyCodeInputSelector": "登录页面验证码输入框 [input 元素] 的 selector 表达式",
+    "webVpnLoginUrl": "登录 WebVpn 的页面链接",
+    "afterWebVpnLoginUrl": "登录 WebVpn 后跳转的页面链接",
+    "webVpnAccountSelector": "登录 WebVpn 页面账号输入框 [input 元素] 的 selector 表达式",
+    "webVpnPasswordSelector": "登录 WebVpn 页面密码输入框 [input 元素] 的 selector 表达式",
+    "webVpnLoginBtnSelector": "登录 WebVpn 页面登录按钮 [任意元素] 的 selector 表达式",
+    "⬇waitVerifyCode 字段解释": "有时候验证码不是即时加载的，需要等待一会儿才能加载出来，可以通过设置 waitVerifyCode 字段来设置等待验证码加载的时间，注意单位为 ms，这是 Int 型字段",
+    "waitVerifyCode": 0,
+    "⬇setTimeOut 字段解释": "登录成功后进行解析课表的操作时间被限制在 5 秒之内，超过这个时间会显示解析失败，如果 5 秒之内无法完成解析，请设置 setTimeOut 为 false，这样就不会有时间上的限制了",
+    "setTimeOut": true
+}

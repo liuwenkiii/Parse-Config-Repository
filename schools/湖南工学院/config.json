@@ -1,0 +1,12 @@
+{
+    "name": "旧版强智",
+    "host": "http://jwgl.hnit.edu.cn",
+    "loginUrl": "/",
+    "afterLoginUrl": "/framework/main.jsp",
+    "courseTableUrl": "/tkglAction.do?method=goListKbByXs&istsxx=no&xnxqh=",
+    "accountSelector": "#userAccount",
+    "passwordSelector": "#userPassword",
+    "verifyCodeSelector": "#SafeCodeImg > img",
+    "verifyCodeInputSelector": "#RANDOMCODE",
+    "loginBtnSelector": "body > form > div > div > div.login > table > tbody > tr:nth-child(5) > td:nth-child(3) > table > tbody > tr:nth-child(1) > td:nth-child(1) > input[type=image]"
+}

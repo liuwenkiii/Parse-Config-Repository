@@ -1,0 +1,12 @@
+{
+    "name": "旧版强智",
+    "host": "http://xxjw.hnust.edu.cn:8080/xxjw",
+    "loginUrl": "/",
+    "afterLoginUrl": "/framework/main.jsp",
+    "courseTableUrl": "/tkglAction.do?method=goListKbByXs&istsxx=no&xnxqh=",
+    "accountSelector": "#userAccount",
+    "passwordSelector": "#userPassword",
+    "verifyCodeSelector": "#SafeCodeImg > img",
+    "verifyCodeInputSelector": "#RANDOMCODE",
+    "loginBtnSelector": "#imgbtn"
+}
