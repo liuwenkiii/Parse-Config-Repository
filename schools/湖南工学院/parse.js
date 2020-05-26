@@ -1,15 +1,15 @@
 function nodeTransform(course) {
-    let newNodes = new Array();
-    let nodes = course.childNodes;
-    for (let i = 0; i < nodes.length; i++) {
+    var newNodes = new Array();
+    var nodes = course.childNodes;
+    for (var i = 0; i < nodes.length; i++) {
         if (nodes[i].innerHTML == undefined) {
             newNodes.push(nodes[i].textContent.replace('  ', ''));
         } else {
-            let node = nodes[i].innerHTML;
-            let nodeList = node.split('<br>');
-            for (let j = 0; j < nodeList.length; j++) {
+            var node = nodes[i].innerHTML;
+            var nodeList = node.split('<br>');
+            for (var j = 0; j < nodeList.length; j++) {
                 if (nodeList[j] == '') continue;
-                newNodes.push(nodeList[j].replace(/\\s+/g, ''));
+                newNodes.push(nodeList[j].replace(/\s+/g, ''));
             }
         }
     }
@@ -18,10 +18,10 @@ function nodeTransform(course) {
 }
 
 function formatTime(time) {
-    let flag = 0;
+    var flag = 0;
     log('time: ' + time);
-    let t = time.split('周[');
-    let week = t[0].replace('，', ',');
+    var t = time.split('周[');
+    var week = t[0].replace('，', ',');
     if (week.search('单') != -1) {
         flag = 1;
         week = week.replace('单', '');
@@ -30,9 +30,9 @@ function formatTime(time) {
         flag = 2;
         week = week.replace('双', '');
     }
-    let jc;
-    let startJc = 0;
-    let endJc = 0;
+    var jc;
+    var startJc = 0;
+    var endJc = 0;
     try {
         jc = t[1].replace('节]', '').split('-');
         startJc = jc[0];
@@ -43,41 +43,41 @@ function formatTime(time) {
     return [week, startJc, endJc, flag];
 }
 
-let targetUrl = host + '/tkglAction.do?method=goListKbByXs&istsxx=no&xnxqh=' + xq;
+var targetUrl = host + '/tkglAction.do?method=goListKbByXs&istsxx=no&xnxqh=' + xq;
 //log('targetUrl = ' + targetUrl);
 if (currentUrl != targetUrl) {
     log('load target url');
     loadUrl(targetUrl);
 } else {
     log('load target url success');
-    for (let rowIndex = 1; rowIndex < 7; rowIndex++) {
+    for (var rowIndex = 1; rowIndex < 7; rowIndex++) {
         if (rowIndex == 1) continue;
-        for (let colIndex = 1; colIndex < 9; colIndex++) {
+        for (var colIndex = 1; colIndex < 9; colIndex++) {
             if (colIndex == 1) continue;
-            let courseContainer = document.querySelector('#kbtable > tbody > tr:nth-child(' + rowIndex + ') > td:nth-child(' + colIndex + ')');
+            var courseContainer = document.querySelector('#kbtable > tbody > tr:nth-child(' + rowIndex + ') > td:nth-child(' + colIndex + ')');
             if (courseContainer == undefined) continue;
             if (courseContainer.children[0].textContent == '&nbsp;') continue;
             //console.log(rowIndex + ', ' + colIndex);
-            let course = nodeTransform(courseContainer.children[1]);
+            var course = nodeTransform(courseContainer.children[1]);
             if (course == null) continue;
-            let index = 0;
-            let hasNext = true;
+            var index = 0;
+            var hasNext = true;
             while (hasNext) {
-                let name = course[index].replace(' ', '').replace(' ', '');
-                let teacherName = course[index + 2];
-                let place = course[index + 4]
+                var name = course[index].replace(' ','').replace(' ','');
+                var teacherName = course[index + 2];
+                var place = course[index + 4]
                     .replace('（', '')
                     .replace('）', '')
                     .replace('(', '')
                     .replace(')', '')
                     .replace('多媒体', '')
                     .replace('录播室', '');
-                let time = formatTime(course[index + 3]);
-                let week = time[0];
-                let startJc = Number(time[1]);
-                let endJc = Number(time[2]);
-                let flag = time[3];
-                let weekday = colIndex - 1;
+                var time = formatTime(course[index + 3]);
+                var week = time[0];
+                var startJc = Number(time[1]);
+                var endJc = Number(time[2]);
+                var flag = time[3];
+                var weekday = colIndex - 1;
                 addCourse(new Course(name, place, teacherName, week, weekday, startJc, endJc, flag));
                 if (course[index + 5] != undefined) {
                     index += 5;
