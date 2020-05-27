@@ -18,5 +18,7 @@
     "⬇waitVerifyCode 字段解释": "有时候验证码不是即时加载的，需要等待一会儿才能加载出来，可以通过设置 waitVerifyCode 字段来设置等待验证码加载的时间，注意单位为 ms，这是 Int 型字段",
     "waitVerifyCode": 0,
     "⬇setTimeOut 字段解释": "登录成功后进行解析课表的操作时间被限制在 5 秒之内，超过这个时间会显示解析失败，如果 5 秒之内无法完成解析，请设置 setTimeOut 为 false，这样就不会有时间上的限制了",
-    "setTimeOut": true
+    "setTimeOut": true,
+    "⬇autoJump 字段解释": "在 afterLogin 页面是否自动跳转至 courseTable 页面，默认为 true",
+    "autoJump": true    
 }
