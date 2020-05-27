@@ -1,0 +1,12 @@
+{
+  "name": "新强智",
+  "host": "http://jwgl.hutb.edu.cn",
+  "loginUrl": "/",
+  "afterLoginUrl": "/jsxsd/framework/xsMain.jsp",
+  "courseTableUrl": "/jsxsd/xskb/xskb_list.do",
+  "accountSelector": "#userAccount",
+  "passwordSelector": "#userPassword",
+  "verifyCodeSelector": "#SafeCodeImg",
+  "verifyCodeInputSelector": "#RANDOMCODE",
+  "loginBtnSelector": "#btnSubmit"
+}

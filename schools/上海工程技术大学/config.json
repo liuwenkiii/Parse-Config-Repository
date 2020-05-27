@@ -1,0 +1,13 @@
+{
+  "name": "树维",
+  "host": "http://jxxt.sues.edu.cn/eams",
+  "loginUrl": "/index.action",
+  "afterLoginUrl": "/home.action",
+  "courseTableUrl": "/home.action",
+  "accountSelector": "#username",
+  "passwordSelector": "#password",
+  "loginBtnSelector": "#login_box > div.login_box > form > table > tbody > tr:nth-child(5) > td:nth-child(2) > input:nth-child(1)",
+  "verifyCodeSelector": "#login_box > div.login_box > form > table > tbody > tr:nth-child(4) > td:nth-child(3) > img",
+  "verifyCodeInputSelector": "#captcha",
+  "setTimeOut": false
+}

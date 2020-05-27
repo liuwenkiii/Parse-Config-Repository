@@ -1,0 +1,13 @@
+{
+  "name": "旧正方",
+  "host": "http://newjwc.tyust.edu.cn",
+  "loginUrl": "/",
+  "afterLoginUrl": "/xs_main.aspx",
+  "courseTableUrl": "/xs_main.aspx",
+  "accountSelector": "#txtUserName",
+  "passwordSelector": "#TextBox2",
+  "verifyCodeSelector": "#icode",
+  "verifyCodeInputSelector": "#txtSecretCode",
+  "loginBtnSelector": "#Button1",
+  "autoJump": false
+}

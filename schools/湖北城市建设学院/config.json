@@ -1,0 +1,11 @@
+{
+  "name": "AIC",
+  "host": "http://aic.hbucvc.edu.cn:8080/jedu",
+  "loginUrl": "/",
+  "afterLoginUrl": "/index.do",
+  "courseTableUrl": "/edu/core/eduStudent/weekCourseTable.do",
+  "accountSelector": "#username",
+  "passwordSelector": "#password",
+  "loginBtnSelector": "#content > button",
+  "setTimeOut": false
+}

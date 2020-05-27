@@ -1,0 +1,13 @@
+{
+  "name": "旧正方",
+  "host": "http://jwgl.bhcy.cn/(no5axw55bzszybniwtwykg55)",
+  "loginUrl": "/default2.aspx",
+  "afterLoginUrl": "/xs_main.aspx",
+  "courseTableUrl": "/xs_main.aspx",
+  "accountSelector": "#TextBox1",
+  "passwordSelector": "#TextBox2",
+  "verifyCodeSelector": "#icode",
+  "verifyCodeInputSelector": "#TextBox3",
+  "loginBtnSelector": "#Button1",
+  "autoJump": false
+}

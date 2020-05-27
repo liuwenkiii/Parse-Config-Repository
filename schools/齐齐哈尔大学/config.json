@@ -1,0 +1,19 @@
+{
+  "name": "URP",
+  "host": "http://172-20-139-153.webvpn.qqhru.edu.cn",
+  "webVpnLoginUrl": "http://webvpn.qqhru.edu.cn/users/sign_in",
+  "afterWebVpnLoginUrl": "http://webvpn.qqhru.edu.cn/",
+  "webVpnAccountSelector": "#user_login",
+  "webVpnPasswordSelector": "#user_password",
+  "webVpnLoginBtnSelector": "#login-form > div.col-md-6.col-md-offset-6.login-btn > input",
+  "loginUrl": "/",
+  "afterLoginUrl": "/loginAction.do",
+  "courseTableUrl": "/loginAction.do",
+  "accountSelector": "body > table > tbody > tr > td > table.mainbox > tbody > tr:nth-child(1) > td:nth-child(2) > form > table > tbody > tr:nth-child(2) > td > table > tbody > tr:nth-child(1) > td:nth-child(2) > input",
+  "passwordSelector": "body > table > tbody > tr > td > table.mainbox > tbody > tr:nth-child(1) > td:nth-child(2) > form > table > tbody > tr:nth-child(2) > td > table > tbody > tr:nth-child(2) > td:nth-child(2) > input",
+  "loginBtnSelector": "#btnSure",
+  "waitVerifyCode": 300,
+  "verifyCodeSelector": "#vchart",
+  "verifyCodeInputSelector": "body > table > tbody > tr > td > table.mainbox > tbody > tr:nth-child(1) > td:nth-child(2) > form > table > tbody > tr:nth-child(2) > td > table > tbody > tr:nth-child(3) > td:nth-child(2) > input[type=text]",
+  "setTimeOut": false
+}

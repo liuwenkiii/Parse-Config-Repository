@@ -1,0 +1,10 @@
+{
+    "name": "新强智",
+    "host": "http://jwxt.wit.edu.cn",
+    "loginUrl": "/jsxsd/",
+    "afterLoginUrl": "/jsxsd/framework/xsMain.jsp",
+    "courseTableUrl": "/jsxsd/xskb/xskb_list.do",
+    "accountSelector": "#userAccount",
+    "passwordSelector": "#userPassword",
+    "loginBtnSelector": "#ul1 > li:nth-child(5) > button"
+  }

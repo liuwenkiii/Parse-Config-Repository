@@ -1,0 +1,11 @@
+{
+  "name": "新正方",
+  "host": "http://xk.huel.edu.cn",
+  "loginUrl": "/jwglxt/xtgl/login_slogin.html",
+  "afterLoginUrl": "/jwglxt/xtgl/index_initMenu.html",
+  "courseTableUrl": "/jwglxt/kbcx/xskbcx_cxXskbcxIndex.html?gnmkdm=N2151&layout=default&su=",
+  "accountSelector": "#yhm",
+  "passwordSelector": "#mm",
+  "loginBtnSelector": "#dl",
+  "autoJump": false
+}

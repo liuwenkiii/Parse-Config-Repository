@@ -1,0 +1,12 @@
+{
+  "name": "新强智",
+  "host": "http://211.64.127.165",
+  "loginUrl": "/",
+  "afterLoginUrl": "/jsxsd/framework/xsMain.jsp",
+  "courseTableUrl": "/jsxsd/xskb/xskb_list.do",
+  "accountSelector": "#userAccount",
+  "passwordSelector": "#userPassword",
+  "verifyCodeSelector": "#SafeCodeImg",
+  "verifyCodeInputSelector": "#RANDOMCODE",
+  "loginBtnSelector": "#ul1 > li:nth-child(6) > button"
+}

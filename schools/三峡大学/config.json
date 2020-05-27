@@ -1,0 +1,12 @@
+{
+  "name": "三峡大学教务系统",
+  "host": "http://210.42.38.26:84/jwc_glxt",
+  "loginUrl": "/",
+  "afterLoginUrl": "/Stu_Notice/Notice_Query.aspx",
+  "courseTableUrl": "/Course_Choice/Course_Schedule.aspx",
+  "accountSelector": "#txtUserName",
+  "passwordSelector": "#txtPassword",
+  "verifyCodeSelector": "#ImageCheck",
+  "verifyCodeInputSelector": "#CheckCode",
+  "loginBtnSelector": "#btnLogin"
+}
