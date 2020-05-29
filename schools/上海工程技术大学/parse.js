@@ -108,11 +108,11 @@ function parse() {
                     }
                     flag = 0;
                     if (week.search('单') != -1) {
-                        week = week.replace('单', '');
+                        week = week.replace(/单/g, '');
                         flag = 1;
                     }
                     if (week.search('双') != -1) {
-                        week = week.replace('双', '');
+                        week = week.replace(/双/g, '');
                         flag = 2;
                     }
                     console.log(name);
