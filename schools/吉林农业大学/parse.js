@@ -52,7 +52,7 @@ function fetchData() {
                     addCourse(new Course(name, place, teacherName,week, weekday, jc, jc, 0))
                 }
             }
-            postMessage();
+            postData();
             //console.log(courses);
         }
     }

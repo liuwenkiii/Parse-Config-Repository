@@ -6,5 +6,6 @@
     "courseTableUrl": "/admin",
     "accountSelector": "#userName",
     "passwordSelector": "#passWord",
-    "loginBtnSelector": "#loginform > button"
+    "loginBtnSelector": "#loginform > button",
+    "setTimeOut": false
 }
