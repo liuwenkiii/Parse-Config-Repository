@@ -19,7 +19,12 @@ function nodeTransform(course) {
 
 for (let weekday = 1; weekday < 8; weekday++) {
     for (let jc = 1; jc < 6; jc++) {
-        let course = nodeTransform(document.querySelector('body > div > center > table > tbody > tr > td > div > center > table > tbody > tr:nth-child(' + (jc + 2) + ') > td:nth-child(' + (weekday + 2) + ')'));
+        let w = weekday + 2;
+        if (jc % 2 == 0) {
+            w = weekday + 1;
+        }
+        let course = nodeTransform(document.querySelector('body > div > center > table > tbody > tr > td > div > center > table > tbody > tr:nth-child(' + (jc + 2) + ') > td:nth-child(' + w + ')'));
+        if (course == null) continue;
         course.pop();
         let hasNext = true;
         let i = 0;
@@ -36,9 +41,16 @@ for (let weekday = 1; weekday < 8; weekday++) {
             } else if (course[i + 1].search('双') != -1) {
                 flag = 2;
             }
+            log(name);
+            log(teacherName);
+            log(place);
+            log(week);
+            log(startJc + '-' + endJc);
+            log(flag);
+            log(w);
             addCourse(new Course(name, place, teacherName, week, weekday, startJc, endJc, flag));
-            if (course[index + 5] != undefined) {
-                index += 5;
+            if (course[i + 5] != undefined) {
+                i += 5;
             } else {
                 hasNext = false;
             }
