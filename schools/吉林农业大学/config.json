@@ -1,0 +1,10 @@
+{
+    "name": "超星",
+    "host": "http://jlau1.jw.chaoxing.com",
+    "loginUrl": "/admin/login",
+    "afterLoginUrl": "/admin",
+    "courseTableUrl": "/admin",
+    "accountSelector": "#userName",
+    "passwordSelector": "#passWord",
+    "loginBtnSelector": "#loginform > div > div.bd > div.loginCon > div.form-group.loginBlock > div.subBtn > button"
+}
