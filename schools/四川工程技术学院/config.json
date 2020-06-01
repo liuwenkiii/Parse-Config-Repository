@@ -1,0 +1,25 @@
+{
+    "name": "四川工程技术学院",
+    "host": "http://jiaowu.scetc.edu.cn",
+    "loginUrl": "/web/web/web/index.asp",
+    "afterLoginUrl": "/xuesheng/bangong/main/index1.asp",
+    "courseTableUrl": "/xuesheng/gongxuan/gongxuan/kbbanji.asp",
+    "accountSelector": "#main3Col1 > div.main3Col1Box > div > table > tbody > tr:nth-child(1) > td:nth-child(2) > input.INPUTBOX",
+    "passwordSelector": "#main3Col1 > div.main3Col1Box > div > table > tbody > tr:nth-child(2) > td:nth-child(2) > input",
+    "loginBtnSelector": "#main3Col1 > div.main3Col1Box > div > table > tbody > tr:nth-child(4) > td:nth-child(2) > input[type=submit]:nth-child(1)",
+    "setTimeOut": false,
+    "pages": [
+        {
+            "url": "http://jiaowu.scetc.edu.cn//xuesheng/bangong/main/index1.asp",
+            "script": "document.querySelector('body > table.wrui > tbody > tr > td > table:nth-child(1) > tbody > tr > td:nth-child(3) > table:nth-child(2) > tbody > tr:nth-child(2) > td > table > tbody > tr:nth-child(3) > td > div > p > a:nth-child(29)').click();"
+        },
+        {
+            "url": "http://jiaowu.scetc.edu.cn//xuesheng/gongxuan/gongxuan/bxq.asp",
+            "script": "let list = document.querySelector('body > table.wrui > tbody > tr > td > div > center > table > tbody > tr > td > table:nth-child(2) > tbody');let len = list.children.length;for (let i = 1; i < len; i++) {let target = list.children[i].children[1];if (list.children[i].children[1].textContent.replace(/\\s/g, '') == xq) {target.children[0].click();}}"
+        },
+        {
+            "url": "http://jiaowu.scetc.edu.cn//xuesheng/gongxuan/gongxuan/kai.asp",
+            "script": "document.querySelector('body > div > center > table:nth-child(1) > tbody > tr > td:nth-child(8) > a').click();"
+        }
+    ]
+}
