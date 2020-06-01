@@ -48,7 +48,7 @@ for (let weekday = 1; weekday < 8; weekday++) {
             log(startJc + '-' + endJc);
             log(flag);
             log(w);
-            addCourse(new Course(name, place, teacherName, week, weekday, startJc, endJc, flag));
+            addCourse(new Course(name, place, teacherName, week, w, startJc, endJc, flag));
             if (course[i + 5] != undefined) {
                 i += 5;
             } else {

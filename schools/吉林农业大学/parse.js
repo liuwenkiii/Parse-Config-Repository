@@ -38,13 +38,13 @@ function fetchData() {
                     if (courses[j].name == name && courses[j].weekday == weekday && courses[j].week == week) {
                         if (Math.abs(courses[j].endJc - jc) == 1) {
                             hasPrev = true;
-                            if (jc > courses[j].endJc) {
+                            if (jc >= courses[j].endJc) {
                                 courses[j].endJc = jc;
                             } else {
                                 courses[j].startJc = jc;
                             }
                         }
-                        courses[j].endJc = jc;
+                        //courses[j].endJc = jc;
                         break;
                     }
                 }

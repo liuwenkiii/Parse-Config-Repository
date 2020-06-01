@@ -1,0 +1,11 @@
+{
+    "name": "黑龙江职业学院",
+    "host": "http://222.171.247.92:9801",
+    "loginUrl": "/login.html",
+    "afterLoginUrl": "/portal/index.html",
+    "courseTableUrl": "/kb/timetable.html",
+    "accountSelector": "body > div:nth-child(1) > div > div.loginWrap > div > div.loginCenter > div > div:nth-child(1) > input[type=text]",
+    "passwordSelector": "body > div:nth-child(1) > div > div.loginWrap > div > div.loginCenter > div > div:nth-child(2) > input[type=password]",
+    "loginBtnSelector": "body > div:nth-child(1) > div > div.loginWrap > div > div.loginBottom > button",
+    "setTimeOut": false
+}
