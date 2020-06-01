@@ -96,20 +96,6 @@ function parse(week) {
                     }
                 }
             }
-            let recordList = new Array();
-            for (let i in courses) {
-                for (let j  in _courses) {
-                    let c1 = courses[i];
-                    let c2 = _courses[j];
-                    if (c1.name == c2.name && c1.weekday == c2.weekday && c1.startJc == c2.startJc && c1.endJc == c2.endJc) {
-                        courses[i].week += ',' + c2.week;
-                        recordList.push(j);
-                    }
-                }
-            }
-            for (let i in recordList) {
-                _courses.splice(recordList[i], 1);
-            }
             courses = courses.concat(_courses);
             parse(week + 1);
         }
