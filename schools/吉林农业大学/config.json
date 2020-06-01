@@ -6,5 +6,5 @@
     "courseTableUrl": "/admin",
     "accountSelector": "#userName",
     "passwordSelector": "#passWord",
-    "loginBtnSelector": "#loginform > div > div.bd > div.loginCon > div.form-group.loginBlock > div.subBtn > button"
+    "loginBtnSelector": "#loginform > button"
 }
