@@ -10,15 +10,15 @@
     "setTimeOut": false,
     "pages": [
         {
-            "url": "http://jiaowu.scetc.edu.cn//xuesheng/bangong/main/index1.asp",
+            "url": "http://jiaowu.scetc.edu.cn/xuesheng/bangong/main/index1.asp",
             "script": "document.querySelector('body > table.wrui > tbody > tr > td > table:nth-child(1) > tbody > tr > td:nth-child(3) > table:nth-child(2) > tbody > tr:nth-child(2) > td > table > tbody > tr:nth-child(3) > td > div > p > a:nth-child(29)').click();"
         },
         {
-            "url": "http://jiaowu.scetc.edu.cn//xuesheng/gongxuan/gongxuan/bxq.asp",
+            "url": "http://jiaowu.scetc.edu.cn/xuesheng/gongxuan/gongxuan/bxq.asp",
             "script": "let list = document.querySelector('body > table.wrui > tbody > tr > td > div > center > table > tbody > tr > td > table:nth-child(2) > tbody');let len = list.children.length;for (let i = 1; i < len; i++) {let target = list.children[i].children[1];if (list.children[i].children[1].textContent.replace(/\\s/g, '') == xq) {target.children[0].click();}}"
         },
         {
-            "url": "http://jiaowu.scetc.edu.cn//xuesheng/gongxuan/gongxuan/kai.asp",
+            "url": "http://jiaowu.scetc.edu.cn/xuesheng/gongxuan/gongxuan/kai.asp",
             "script": "document.querySelector('body > div > center > table:nth-child(1) > tbody > tr > td:nth-child(8) > a').click();"
         }
     ]
